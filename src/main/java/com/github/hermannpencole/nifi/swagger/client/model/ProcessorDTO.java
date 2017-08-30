@@ -225,10 +225,10 @@ public class ProcessorDTO {
   }
 
    /**
-   * Styles for the processor (background-color => #eee).
+   * Styles for the processor (background-color = #eee).
    * @return style
   **/
-  @ApiModelProperty(example = "null", value = "Styles for the processor (background-color => #eee).")
+  @ApiModelProperty(example = "null", value = "Styles for the processor (background-color = #eee).")
   public Map<String, String> getStyle() {
     return style;
   }
