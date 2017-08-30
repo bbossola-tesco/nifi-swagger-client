@@ -140,7 +140,9 @@ public class ApiClient {
      */
     public ApiClient() {
         httpClient = new OkHttpClient();
-
+        httpClient.setConnectTimeout(Integer.getInteger("http.connect.timeout", 5), TimeUnit.SECONDS); 
+        httpClient.setReadTimeout(Integer.getInteger("http.read.timeout", 60), TimeUnit.SECONDS);    
+        
         verifyingSsl = true;
 
         json = new JSON(this);

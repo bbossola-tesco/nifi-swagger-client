@@ -21,3 +21,6 @@ target
 build
 /.idea
 /nifi-swagger-client.iml
+.classpath
+.project
+.settings/
